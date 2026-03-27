@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "dev": " nodemon server.js",
+    "start": "node server.js",
     "start:prod": "NODE_ENV=prod  nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js  --out-dir ./public/js/ --out-file ./public/js/bundle.js",
-    "build:js": "parcel watch ./public/js/index.js  --out-dir ./public/js/ --out-file ./public/js/bundle.js"
+    "build:js": "parcel build ./public/js/index.js  --out-dir ./public/js/ --out-file ./public/js/bundle.js"
   },
   "author": "Nathan",
   "license": "ISC",
@@ -55,6 +56,6 @@
     "prettier": "^1.17.0"
   },
   "engines": {
-    "node": "10.0.1"
+    "node": "^10.0.1"
   }
 }
