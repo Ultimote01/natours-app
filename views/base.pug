@@ -1,0 +1,28 @@
+doctype  html 
+html(lang="en")
+  head
+    block head
+      meta(charset="UTF-8")
+      meta(http-equip="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline' https://js.stripe.com;")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet" href="/css/style.css")
+      link( href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet")
+      link(rel="shoutcut icon" href="/img/favicon.png" type="image/png")
+    
+
+      title Natours | #{title}
+  //header
+  include _header
+   
+  
+  //Content
+  //- section.overview
+  block content
+    
+
+  //footer
+  include _footer
+  
+  script(src="/js/bundle.js")
+  

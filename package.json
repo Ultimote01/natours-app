@@ -1,0 +1,60 @@
+{
+  "name": "http-test",
+  "version": "1.0.0",
+  "description": "http connect",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=prod  nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js  --out-dir ./public/js/ --out-file ./public/js/bundle.js",
+    "build:js": "parcel watch ./public/js/index.js  --out-dir ./public/js/ --out-file ./public/js/bundle.js"
+  },
+  "author": "Nathan",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@stripe/stripe-js": "^8.0.0",
+    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^3.1.1",
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "ndb": "^0.2.4",
+    "nodemailer": "^7.0.10",
+    "nodemon": "^3.1.14",
+    "pug": "^3.0.3",
+    "sharp": "^0.34.3",
+    "slugify": "^1.6.6",
+    "stripe": "^19.1.0",
+    "validator": "^13.15.15",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "node": "10.0.1"
+  }
+}
